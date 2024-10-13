@@ -9,7 +9,7 @@ function Projects() {
       description:
         "Discover the latest trends and timeless fashion with our curated selection of high-quality clothing for men, women, and kids. Whether you're looking for everyday essentials or statement pieces for special occasions, we offer a variety of styles to suit every taste.",
       "repo-link": "https://github.com/suyash-5613/flipzone",
-      "demo-link": "https://github.com/suyash-5613/flipzone",
+      "demo-link": "https://suyash-5613.github.io/flipzone",
       image: project1,
     },
     {
