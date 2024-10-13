@@ -1,0 +1,77 @@
+.hamburger {
+  display: none;
+  color: black;
+}
+
+.navbar {
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 26px 200px;
+  color: black;
+  position: fixed;
+  background: white;
+  .logo {
+    .title {
+      font-size: 42px;
+      font-family: "Great Vibes";
+      margin-left: 8px;
+    }
+  }
+  .nav-links {
+    display: flex;
+    cursor: pointer;
+    gap: 100px;
+    list-style: none;
+    .nav-item {
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 20px;
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+.navbar{
+  padding: 26px 50px;
+
+}
+
+  .nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(152, 183, 240), rgb(110, 246, 239));
+    color: white;
+    z-index: 40;
+    list-style: none;
+  }
+
+  .nav-dropdown li {
+    padding: 24px 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 2.25rem;
+  }
+
+  .nav-dropdown li:hover {
+    color: gray;
+  }
+}

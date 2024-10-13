@@ -1,0 +1,317 @@
+.header {
+  height: 100vh;
+  background: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.header-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .header-left-content {
+    width: 600px;
+    h1 {
+      font-size: 80px;
+      line-height: 100px;
+    }
+    .desc {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 24px;
+        white-space: nowrap;
+        margin-right: 10px;
+      }
+      hr {
+        flex-grow: 1;
+        background: #000000;
+        height: 2px;
+        border: none;
+      }
+    }
+    .about-me {
+      width: auto;
+      text-align: justify;
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    .social-links {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      margin-bottom: 14px;
+      a:nth-child(1) :hover {
+        color: black;
+      }
+      a:nth-child(2):hover {
+        color: rgba(0, 0, 255, 0.754);
+      }
+      a:nth-child(3):hover {
+        color: rgb(255, 0, 106);
+      }
+      a {
+        svg {
+          width: 40px;
+          height: 40px;
+          align-content: center;
+          padding: 2px;
+        }
+      }
+    }
+
+    .hire-me {
+      --color: rgb(45, 104, 221);
+      background: white;
+      display: inline-block;
+      width: 6em;
+      height: 2.6em;
+      line-height: 2.5em;
+      overflow: hidden;
+      font-size: 17px;
+      z-index: 1;
+      color: var(--color);
+      border: 2px solid var(--color);
+      border-radius: 6px;
+      position: relative;
+    }
+
+    .hire-me::before {
+      position: absolute;
+      content: "";
+      background: var(--color);
+      width: 150px;
+      height: 200px;
+      z-index: -1;
+      border-radius: 50%;
+    }
+
+    .hire-me:hover {
+      color: white;
+      cursor: pointer;
+    }
+
+    .hire-me:before {
+      top: 100%;
+      left: 100%;
+      transition: 0.3s all;
+    }
+
+    .hire-me:hover::before {
+      top: -30px;
+      left: -30px;
+    }
+  }
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: end;
+
+  .profile {
+    z-index: 2;
+    height: 70%;
+  }
+
+  .arrow-1 {
+    left: 16%;
+    bottom: 72%;
+    position: absolute;
+    z-index: 12;
+    width: 300px;
+  }
+
+  .line-1 {
+    right: 20%;
+    bottom: 70%;
+    position: absolute;
+    z-index: 12;
+    width: 100px;
+  }
+
+  .line-2 {
+    right: 65%;
+    bottom: 60%;
+    position: absolute;
+    z-index: 12;
+    width: 80px;
+  }
+  .circle {
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    border-radius: 100%;
+    background: rgba(253, 3, 3, 0.069);
+    bottom: -10%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header {
+    flex-direction: column-reverse;
+    height: 150vh;
+  }
+  .header-left-content {
+    margin: 20px !important;
+    h1 {
+      font-size: 80px !important;
+    }
+    .desc {
+      p {
+        font-size: 20px !important;
+      }
+    }
+    .about-me {
+      font-size: 16px !important;
+    }
+  }
+  .header-right {
+    top: 80px;
+    .circle {
+      top: 160px;
+      width: 500px !important;
+      height: 500px !important;
+    }
+    .arrow-1 {
+      left: 22%;
+      bottom: 75%;
+      width: 300px;
+    }
+
+    .line-1 {
+      right: 25%;
+      bottom: 65%;
+      width: 100px;
+    }
+
+    .line-2 {
+      right: 60%;
+      bottom: 60%;
+      width: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header-right {
+    top: 60px;
+    .arrow-1 {
+      left: 20%;
+      bottom: 75%;
+      width: 250px;
+    }
+
+    .line-1 {
+      right: 22%;
+      bottom: 65%;
+      width: 80px;
+    }
+
+    .line-2 {
+      right: 60%;
+      bottom: 60%;
+      width: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-left-content {
+    h1 {
+      font-size: 50px !important;
+      line-height: 70px !important;
+    }
+    .desc {
+      p {
+        font-size: 18px !important;
+      }
+    }
+    .about-me {
+      font-size: 14px !important;
+    }
+  }
+  .social-links {
+    a {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .profile {
+    height: 60%;
+  }
+  .header-right {
+    top: 50px;
+    .arrow-1 {
+      left: 15%;
+      bottom: 75%;
+      width: 200px;
+    }
+
+    .line-1 {
+      right: 15%;
+      bottom: 65%;
+      width: 70px;
+    }
+
+    .line-2 {
+      right: 65%;
+      bottom: 60%;
+      width: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-right {
+    top: 40px;
+    .arrow-1 {
+      left: 12%;
+      bottom: 72%;
+      width: 180px;
+    }
+
+    .line-1 {
+      right: 8%;
+      bottom: 65%;
+      width: 60px;
+    }
+
+    .line-2 {
+      right: 65%;
+      bottom: 60%;
+      width: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-right {
+    top: 40px;
+    .arrow-1 {
+      left: 12%;
+      bottom: 72%;
+      width: 160px;
+    }
+
+    .line-1 {
+      right: 5%;
+      bottom: 65%;
+      width: 50px;
+    }
+
+    .line-2 {
+      right: 70%;
+      bottom: 60%;
+      width: 50px;
+    }
+  }
+}

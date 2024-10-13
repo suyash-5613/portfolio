@@ -1,0 +1,212 @@
+.about {
+  padding: 120px 0px;
+  padding-top: 160px;
+  z-index: 2;
+}
+
+.about .intro {
+  width: 340px;
+}
+.about .intro .heading {
+  font-size: 25px;
+  color: rgb(45, 104, 221);
+  user-select: none;
+}
+.about .intro .desc {
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.4rem;
+  font-size: 16px;
+}
+.about .intro .desc-link {
+  color: black;
+  font-style: italic;
+  text-underline-offset: 3px;
+}
+.about .brief {
+  display: flex;
+}
+.about .brief .intro:not(:last-child) {
+  margin-right: 100px;
+}
+.about .brief .intro {
+  margin-top: 60px;
+}
+.about .brief .intro .desc {
+  margin-bottom: 5px;
+  line-height: 1.4rem;
+}
+.about .brief .intro .details p {
+  font-weight: 300;
+  margin: 2px 0;
+}
+.about .brief .intro .details .title {
+  font-weight: 600;
+  margin-bottom: 1px;
+  font-size: 14px;
+}
+.about .intro .desc-link {
+  margin: 0 10px;
+}
+.about .brief .intro .skills {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 450;
+}
+.about .brief .intro .skills .skill .progress-area {
+  margin-top: 5px;
+  width: 100%;
+  background: #d9d9d9;
+}
+.about .brief .intro .skills .skill .progress-area .progress {
+  height: 6px;
+  background: rgb(45, 104, 221);
+}
+.about .brief .intro .skills .skill .progress-area .web {
+  animation: web 1s ease-in-out forwards;
+}
+
+@keyframes web {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+.about .brief .intro .skills .skill .progress-area .mobile {
+  animation: mobile 1s ease-in-out forwards;
+}
+
+@keyframes mobile {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+.about .brief .intro .skills .skill .progress-area .design {
+  animation: design 1s ease-in-out forwards;
+}
+
+@keyframes design {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+.about .brief .intro .skills .skill .progress-area .dsa {
+  animation: dsa 1s ease-in-out forwards;
+}
+
+@keyframes dsa {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+.about .brief .intro .skills .skill:not(:last-child) {
+  margin-bottom: 25px;
+}
+.about .resume-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.about .resume-area .resume:hover {
+  cursor: pointer;
+}
+
+.about .resume-area .resume {
+  --color: rgb(45, 104, 221);
+  background: transparent;
+  display: flex;
+  width: 8em;
+  justify-content: center;
+  align-items: center;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.about .resume-area .resume::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 300px;
+  height: 150px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.about .resume-area .resume:hover .resume-text,
+.about .resume-area .resume:hover svg {
+  color: white;
+  fill: white;
+}
+
+.about .resume-area .resume:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.about .resume-area .resume:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+.about .resume-area .resume .resume-text {
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+.about .resume-area .resume svg {
+  --color: rgb(45, 104, 221);
+  width: 20px;
+  fill: var(--color);
+  transition: fill 0.2s;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .about .intro {
+    width: 300px;
+  }
+  .about .brief .intro:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 50px 20px 50px 20px;
+  }
+  .about .intro {
+    max-width: 300px;
+    width: 100%;
+  }
+  .about .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .about .brief .intro {
+    margin-top: 40px;
+  }
+  .about .brief .intro:not(:last-child) {
+    margin-right: 0px;
+  }
+}
