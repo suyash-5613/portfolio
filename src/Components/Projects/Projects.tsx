@@ -25,9 +25,9 @@ function Projects() {
     <div id="projects" className="projects">
       <h1 className="heading">My Creations</h1>
       <div className="projects-list">
-        {projects.map((i) => {
+        {projects.map((i,idx) => {
           return (
-            <div className="horizontal-card-container">
+            <div key={idx} className="horizontal-card-container">
               <div className="horizontal-card">
                 <div className="horizontal-card-image">
                   <img src={i.image} alt="Project Image" />
