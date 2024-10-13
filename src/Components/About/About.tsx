@@ -127,7 +127,7 @@ function About() {
             </svg>{" "}
             <a
               className="resume-text"
-              href="/assets/resume.pdf"
+              href="/Assets/resume.pdf"
               download="Suyash-Sahu-Resume"
             >
               RESUME
