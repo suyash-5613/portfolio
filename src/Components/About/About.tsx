@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import resumePdf from "../../Assets/Suyash_Sahu_Resume .pdf";
 
 function About() {
   return (
@@ -119,7 +118,7 @@ function About() {
             <path d="M357.765,81.621c0-12.668-10.305-22.973-22.97-22.973h-157.57c-12.672,0-22.976,10.305-22.976,22.973v73.486h-30.101v298.245h263.709V155.107h-30.09V81.621z M197.418,101.818h117.177v53.289H197.418V101.818z" />
           </svg>
           <a
-            href={resumePdf}
+            href={`${process.env.PUBLIC_URL}/Suyash_Sahu_Resume.pdf`}
             download="Suyash-Sahu-Resume"
             className="resume-text"
           >
