@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import { useState } from "react";
+import { useTheme } from "../../ThemeContext";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const Navbar = () => {
   const links = [
@@ -18,23 +20,32 @@ const Navbar = () => {
     },
   ];
   const [nav, setNav] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <>
       <div className="navbar">
         <div className="logo">
-          <h1 className="title">Suyash</h1>
+          <Link spy={true} smooth={true} duration={500} to="home">
+            <h1 className="title">Suyash</h1>
+          </Link>
         </div>
         <ul className="nav-links">
           {links.map(({ id, link }) => (
             <li key={id} className="nav-item">
-              <Link spy={true} smooth={true} duration={500} to={link}>
+              <Link spy={true} smooth={true} duration={500} to={link} offset={link !== "projects" ? -90 : -60}>
                 {link}
               </Link>
             </li>
           ))}
         </ul>
-        <div className="hamburger" onClick={() => setNav(!nav)}>
-          ☰
+        <div className="nav-actions">
+          <div className="theme-toggle" onClick={toggleTheme}>
+            {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} color="#fcd34d" />}
+          </div>
+          <div className="hamburger" onClick={() => setNav(!nav)}>
+            {nav ? '✖' : '☰'}
+          </div>
         </div>
       </div>
       {nav && (
@@ -43,18 +54,15 @@ const Navbar = () => {
             <li key={id}>
               <Link
                 to={link}
-                offset={link!=="projects"?-900:-640}
+                offset={-80}
                 onClick={() => setNav(!nav)}
                 smooth
-                duration={1000}
+                duration={500}
               >
                 {link}
               </Link>
             </li>
           ))}
-          <div className="hamburger" onClick={() => setNav(!nav)}>
-            ✖
-          </div>
         </ul>
       )}
     </>

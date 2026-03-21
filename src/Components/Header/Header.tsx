@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import hero_image from "../../Assets/hero-image.png";
+import hero_image from "../../Assets/Prof Image 2.0.png";
 import arrow from "../../Assets/arrow-1.svg";
 import line_1 from "../../Assets/line-1.svg";
 import line_2 from "../../Assets/line-2.svg";
@@ -41,11 +41,9 @@ function Header() {
         </div>
       </div>
       <div className="header-right">
-        <div className="circle"></div>
-        <img className="profile" src={hero_image} alt="" />
-        <img className="arrow-1" src={arrow} alt="" />
-        <img className="line-1" src={line_1} alt="" />
-        <img className="line-2" src={line_2} alt="" />
+        <div className="glow-orb orb-1"></div>
+        <div className="glow-orb orb-2"></div>
+        <img className="profile premium-portrait" src={hero_image} alt="Suyash Sahu" />
       </div>
     </section>
   );
