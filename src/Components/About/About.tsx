@@ -1,12 +1,13 @@
 import React from "react";
 import "./About.css";
+import resumePdf from "../../Assets/Suyash_Sahu_Resume .pdf";
 
 function About() {
   return (
     <section id="about" className="about-section">
       <h2 className="section-title">About Me</h2>
       <div className="bento-grid">
-        
+
         <div className="card bento-myself">
           <h3 className="heading">MYSELF</h3>
           <p className="desc">
@@ -37,7 +38,7 @@ function About() {
             University Vijayawada
           </p>
           <p className="desc role-highlight">MERN Stack Developer</p>
-          
+
           <div className="details-grid">
             <div className="detail-item">
               <span className="title">Name</span>
@@ -76,7 +77,7 @@ function About() {
                 <span>50%</span>
               </div>
               <div className="progress-area">
-                <div className="progress glow" style={{width: '50%'}}></div>
+                <div className="progress glow" style={{ width: '50%' }}></div>
               </div>
             </div>
             <div className="skill">
@@ -85,7 +86,7 @@ function About() {
                 <span>70%</span>
               </div>
               <div className="progress-area">
-                <div className="progress glow" style={{width: '70%'}}></div>
+                <div className="progress glow" style={{ width: '70%' }}></div>
               </div>
             </div>
             <div className="skill">
@@ -94,7 +95,7 @@ function About() {
                 <span>75%</span>
               </div>
               <div className="progress-area">
-                <div className="progress glow" style={{width: '75%'}}></div>
+                <div className="progress glow" style={{ width: '75%' }}></div>
               </div>
             </div>
             <div className="skill">
@@ -103,7 +104,7 @@ function About() {
                 <span>60%</span>
               </div>
               <div className="progress-area">
-                <div className="progress glow" style={{width: '60%'}}></div>
+                <div className="progress glow" style={{ width: '60%' }}></div>
               </div>
             </div>
           </div>
@@ -118,7 +119,7 @@ function About() {
             <path d="M357.765,81.621c0-12.668-10.305-22.973-22.97-22.973h-157.57c-12.672,0-22.976,10.305-22.976,22.973v73.486h-30.101v298.245h263.709V155.107h-30.09V81.621z M197.418,101.818h117.177v53.289H197.418V101.818z" />
           </svg>
           <a
-            href="/Assets/resume.pdf"
+            href={resumePdf}
             download="Suyash-Sahu-Resume"
             className="resume-text"
           >
