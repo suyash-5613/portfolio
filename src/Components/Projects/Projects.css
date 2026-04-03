@@ -9,8 +9,8 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 40px;
-  margin-top: 40px;
+  gap: 48px;
+  margin-top: 60px;
 }
 
 .project-card {
@@ -69,16 +69,17 @@
   font-size: 28px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .project-desc {
   font-size: 15px;
   line-height: 1.6;
   color: #cbd5e1;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -155,6 +156,7 @@
   }
   .project-desc {
     -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
 }
 

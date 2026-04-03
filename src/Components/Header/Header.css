@@ -39,14 +39,15 @@
   font-weight: 800;
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .header-left-content .desc {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .header-left-content .desc p {
@@ -69,7 +70,7 @@
   text-align: justify;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--text-muted);
   margin-bottom: 32px;
 }

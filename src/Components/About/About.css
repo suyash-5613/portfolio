@@ -11,21 +11,22 @@
   font-family: var(--font-logo);
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 40px;
 }
 
 .card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 24px;
-  padding: 40px;
+  padding: 48px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow);
@@ -151,7 +152,7 @@
 .resume-area {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .resume-btn {

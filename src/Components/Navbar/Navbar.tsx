@@ -18,6 +18,10 @@ const Navbar = () => {
       id: 3,
       link: "projects",
     },
+    {
+      id: 4,
+      link: "contact",
+    },
   ];
   const [nav, setNav] = useState(false);
   const { theme, toggleTheme } = useTheme();
