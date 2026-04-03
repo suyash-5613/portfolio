@@ -18,8 +18,8 @@ function About() {
               rel="noreferrer"
             >
               suyash-5613
-            </a>
-             to find me. I am passionate about design, want to be a stand-alone
+            </a>{" "}
+            to find me. I am passionate about design, want to be a stand-alone
             UI/UX designer. A disciplined person who loves to explore things
             either a place or a language.
           </p>
