@@ -35,7 +35,7 @@ function Header() {
               <FaInstagram></FaInstagram>
             </a>
           </div>
-            <button className="hire-me" >
+            <button className="hire-me" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Hire me
             </button>
         </div>

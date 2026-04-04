@@ -1,9 +1,10 @@
 .projects-section {
-  padding: 120px 10%;
+  padding: 80px 10%;
   position: relative;
   color: var(--text-color);
   z-index: 2;
   min-height: 100vh;
+  scroll-margin-top: 90px;
 }
 
 .projects-grid {
@@ -41,7 +42,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(11, 17, 32, 0.85); /* Dark overlay for contrast */
+  background: rgba(11, 17, 32, 0.85);
+  /* Dark overlay for contrast */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
@@ -142,18 +144,23 @@
   .projects-section {
     padding: 80px 5%;
   }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
   .project-overlay {
     padding: 30px;
-    opacity: 1; /* Always visible on mobile */
+    opacity: 1;
+    /* Always visible on mobile */
     background: linear-gradient(to top, rgba(11, 17, 32, 0.95) 0%, rgba(11, 17, 32, 0.4) 100%);
     justify-content: flex-end;
   }
+
   .project-info {
     transform: translateY(0);
   }
+
   .project-desc {
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -164,9 +171,11 @@
   .project-card {
     aspect-ratio: 1 / 1;
   }
+
   .project-overlay {
     padding: 24px;
   }
+
   .project-title {
     font-size: 22px;
   }

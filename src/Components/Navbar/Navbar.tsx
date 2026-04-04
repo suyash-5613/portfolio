@@ -37,7 +37,7 @@ const Navbar = () => {
         <ul className="nav-links">
           {links.map(({ id, link }) => (
             <li key={id} className="nav-item">
-              <Link spy={true} smooth={true} duration={500} to={link} offset={link !== "projects" ? -90 : -60}>
+              <Link spy={true} smooth={true} duration={500} to={link} offset={0}>
                 {link}
               </Link>
             </li>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <li key={id}>
               <Link
                 to={link}
-                offset={-80}
+                offset={0}
                 onClick={() => setNav(!nav)}
                 smooth
                 duration={500}
