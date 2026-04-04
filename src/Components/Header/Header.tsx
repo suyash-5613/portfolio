@@ -1,9 +1,7 @@
 import React from "react";
 import "./Header.css";
 import hero_image from "../../Assets/Prof Image 2.0.png";
-import arrow from "../../Assets/arrow-1.svg";
-import line_1 from "../../Assets/line-1.svg";
-import line_2 from "../../Assets/line-2.svg";
+
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Header() {
@@ -22,16 +20,17 @@ function Header() {
             enhance user experiences and drive results.
           </p>
           <div className="social-links">
-            <a href="https://github.com/suyash-5613" target="_blank">
+            <a href="https://github.com/suyash-5613" target="_blank" rel="noreferrer">
               <FaGithub></FaGithub>
             </a>
             <a
               href="https://www.linkedin.com/in/suyash-sahu-914287276/"
               target="_blank"
+              rel="noreferrer"
             >
               <FaLinkedin></FaLinkedin>
             </a>
-            <a href="https://www.instagram.com/__suyash_04__/" target="_blank">
+            <a href="https://www.instagram.com/__suyash_04__/" target="_blank" rel="noreferrer">
               <FaInstagram></FaInstagram>
             </a>
           </div>
