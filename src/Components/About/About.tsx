@@ -121,7 +121,7 @@ function About() {
 
       <div className="resume-area">
         <a
-          href={`${process.env.PUBLIC_URL}/Suyash_Sahu_Resume.pdf`}
+          href={`${process.env.PUBLIC_URL}/Data_Analyst_New.pdf`}
           download="Suyash_Sahu_Resume.pdf"
           className="resume-btn"
         >
