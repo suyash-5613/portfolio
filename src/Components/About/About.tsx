@@ -121,8 +121,8 @@ function About() {
 
       <div className="resume-area">
         <a
-          href={`${process.env.PUBLIC_URL}/Data_Analyst_New.pdf`}
-          download="Suyash_Sahu_Resume.pdf"
+          href={`${process.env.PUBLIC_URL}/Suyash_Sahu_Data_Analyst.pdf`}
+          download="Suyash_Sahu_Data_Analyst.pdf"
           className="resume-btn"
         >
           <svg className="resume-icon" viewBox="0 0 512 512">
