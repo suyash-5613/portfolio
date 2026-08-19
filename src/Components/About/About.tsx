@@ -73,7 +73,16 @@ function About() {
             <div className="skill">
               <div className="skill-header">
                 <span>Data Structures and Algorithms</span>
-                <span>50%</span>
+                <span>80%</span>
+              </div>
+              <div className="progress-area">
+                <div className="progress glow" style={{ width: '50%' }}></div>
+              </div>
+            </div>
+            <div className="skill">
+              <div className="skill-header">
+                <span>Data Analytics</span>
+                <span>92%</span>
               </div>
               <div className="progress-area">
                 <div className="progress glow" style={{ width: '50%' }}></div>
